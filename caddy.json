@@ -1,0 +1,1 @@
+{"caddy":{"processors":[{"json":{"field":"message","add_to_root":true}},{"date":{"field":"ts","formats":["UNIX"]}},{"remove":{"field":["ts","message"]}},{"set":{"field":"type","value":"caddy_logs","override":false}}]}}
